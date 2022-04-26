@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   useEffect(() => {
-    fetch('/polls/1/', {
+    fetch('http://localhost:8000/polls/1/', {
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
