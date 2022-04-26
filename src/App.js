@@ -4,13 +4,11 @@ import './App.css';
 
 function App() {
   useEffect(() => {
-    fetch('http://164.92.193.159/api/token/obtain/', {
-      method: "POST",
+    fetch('/polls/1/', {
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({email: 'test@test.pl', password: 'test'})
     })
     .then(res => res.json())
     .then(data => {
